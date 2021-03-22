@@ -1,0 +1,120 @@
+*{
+ 
+ margin: 0;
+ padding: 0;
+
+}
+
+body{
+ 
+ background-image: url('calimg.jpg');
+ 
+ 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+ 
+
+}
+
+
+header{
+position:absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.w01{
+
+   font-size: 4em;
+   display:flex;
+   flex-direction: row;
+   width: 50%;
+   margin-left: 1EM;
+
+}
+
+.form-group{
+
+	font-size: 5em;
+	display: flex;
+	margin-top: .2em;
+}
+
+#name{
+
+	width: 10em;
+	padding: .1em;
+	font-size: .5em;
+}
+#cname{
+
+	width: 10em;
+	padding: .1em;
+	font-size: .5em;
+}
+
+.w02{
+
+   font-size: 2.5em;
+   
+   width: 4em;
+
+}
+
+
+#btn1{
+	   margin-top: 2em;
+	   margin-left: 6em;
+
+       width: 5em;
+	font-size: 3em;
+
+	background: blue;
+
+    
+
+}
+
+.w03{
+
+   font-size: 2em;
+   
+   width: 10em;
+   margin-top: 2em;
+   margin-left: 1em;
+
+}
+#lovevalue{
+    
+	padding-left: 3em;
+	padding-right: 3em;
+	font-size: 3em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	text-align: center;
+
+	
+}
+
+@media only screen and (min-width: 790px){
+
+	body{
+
+		margin-top: 8em;
+	}
+
+
+    header{
+
+    	position: absolute;
+
+    }
+
+
+}

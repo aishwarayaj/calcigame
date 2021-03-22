@@ -1,0 +1,57 @@
+<title>AJ Fun</title>
+	<link rel="stylesheet" type="text/css" href="bestiecal.css">
+</head>
+<body>
+
+  <header>
+  	<div class="w01">
+  		<h2>Bestie&nbsp;Calculator</h2>
+  	</div>
+  	<form action="">
+  	<div class="form-group">
+     <input type="text" name="" class="form-control text-center" placeholder="Your Name" id="name" >&nbsp;
+     <input type="text" name="" class="form-control text-center" placeholder="Bestie name" id="cname" >
+
+    </div>	
+ </form>
+
+   <button   class="w02" onclick="fn1()" id="btn1">click</button>
+   <br/>
+   <div>
+     <input type="text" name="" placeholder="Bestie Percentage" class="w03" id="lovevalue">
+    </div>
+</header>
+
+
+<script>
+ function fn1(){
+
+  var name = document.getElementById('name').value;
+  var cname = document.getElementById('cname').value;
+
+  if(name == ""){
+   alert('Please enter your name');
+  }else if (name.length <=2 ) {
+   alert('Min lenght is 3')
+  }else if(!isNaN(name)){
+   alert('Numbers are not allowed');
+  }
+
+  else if(cname == ""){
+   alert('Please enter your love name');
+  }else if (cname.length <=2 ) {
+   alert('Min lenght is 3')
+  }else if(!isNaN(cname)){
+   alert('Numbers are not allowed');
+  }
+  else{
+  var lovdata = Math.random() * 25;
+  lovdata = Math.floor(lovdata);
+  document.getElementById('lovevalue').value = lovdata + "%"; 
+  }
+  
+ }
+</script>
+
+</body>
+</html>
